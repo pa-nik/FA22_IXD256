@@ -11,3 +11,5 @@ i += 1
 ```
 
 Example of using a [link](http://wwww.google.com) in markdown
+
+![example of an image](https://github.com/pa-nik/FA22_IXD256/blob/main/invader.png)

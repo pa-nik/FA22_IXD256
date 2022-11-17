@@ -9,3 +9,5 @@ Example of a few lines of code:
 int i = 0
 i += 1
 ```
+
+Example of using a [link](http://wwww.google.com) in markdown

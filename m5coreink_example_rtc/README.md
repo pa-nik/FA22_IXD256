@@ -1,1 +1,1 @@
-Real Time Clock (RTC) Example [preview](https://pa-nik.github.io/FA22_IXD256/m5coreink_example_rtc/)
+[Real Time Clock (RTC) example](https://create.arduino.cc/editor/n-p/c64479bd-5ca5-488f-a262-023997cd1c7d/preview?embed "@embed")

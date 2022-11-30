@@ -2,8 +2,9 @@
 
 Examples and templates for **IXD-256**
 
-### Arduino Examples
+### M5Core-Ink Examples
 
+[ePaper Display](./m5coreink_example_epaper/)
 [Real Time Clock (RTC)](./m5coreink_example_rtc/)
 
 ### Resources / Links

@@ -1,18 +1,10 @@
 ## FA22_IXD256
 
-Project documentation for **IXD-256**
+Examples and templates for **IXD-256**
 
-Example of including `variable name` in markdown
+### Arduino Examples
 
-Example of a few lines of code:
-```
-int i = 0
-i += 1
-```
-
-Example of using a [link](http://wwww.google.com) in markdown
-
-![example of an image](https://github.com/pa-nik/FA22_IXD256/blob/main/invader.png)
+(Real Time Clock (RTC))[https://pa-nik.github.io/FA22_IXD256/m5coreink_example_rtc/]
 
 ### Resources / Links
 

@@ -2,10 +2,12 @@
 
 Examples and templates for **IXD-256**
 
-### M5Core-Ink Examples
+### M5Stack Core Ink Examples
 
+[Dual Button Unit](./m5coreink_example_dualbutton/)   
 [ePaper Display](./m5coreink_example_epaper/)   
 [Real Time Clock (RTC)](./m5coreink_example_rtc/)   
+[Servo](./m5coreink_example_servo/)
 
 ### Schematics
 

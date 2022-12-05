@@ -1,6 +1,6 @@
-This example uses the [ESP32Servo](https://github.com/jkb-git/ESP32Servo) library by John K. Bennett and Kevin Harrington.  In Arduino IDE, select `Tools -> Manage Libraries...`, search for and install `ESP32Servo`.   
-
 [Arduino Editor Link](https://create.arduino.cc/editor/n-p/b86a3e53-a7d1-47c5-adc6-be6b12d8baee/preview)
+
+This example uses the [ESP32Servo library](https://github.com/jkb-git/ESP32Servo) by John K. Bennett and Kevin Harrington.  In Arduino IDE, select `Tools -> Manage Libraries...` and search for `ESP32Servo` to install the library.   
 
 To test the example, connect a servo to the neighboring pins `GND`, `5V` and `G26` on M5Core-Ink board (top connector).  Move the side jog dial up or down to actuate the servo.   
 

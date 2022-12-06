@@ -7,8 +7,8 @@ Examples and templates for **IXD-256**
 [Dual Button Unit](./m5coreink_example_dualbutton/)   
 [ePaper Display](./m5coreink_example_epaper/)   
 [Real Time Clock (RTC)](./m5coreink_example_rtc/)   
-[Sensor (Analog Input)](./m5coreink_example_sensor/)
-[Servo](./m5coreink_example_servo/)
+[Sensor (Analog Input)](./m5coreink_example_sensor/)  
+[Servo](./m5coreink_example_servo/)  
 
 ### P5.js Examples
 

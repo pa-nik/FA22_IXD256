@@ -10,9 +10,11 @@ Examples and templates for **IXD-256**
 [Real Time Clock (RTC)](./m5coreink_example_rtc/)   
 [Sensor (Analog Input)](./m5coreink_example_sensor/)  
 [Servo](./m5coreink_example_servo/)  
+[Subscribe and Publish to the cloud with MQTT](./m5coreink_example_mqtt/)  
 
 ### P5.js Examples
 
+[Sensor Visualization (MQTT)](./p5js_example_mqtt/)  
 [Sensor Visualization (WebSerial)](./p5js_example_sensor_webserial/)  
 [IMU Visualization (WebSerial)](./p5js_example_imu_webserial/)  
 

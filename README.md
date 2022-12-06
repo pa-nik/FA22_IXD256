@@ -6,6 +6,7 @@ Examples and templates for **IXD-256**
 
 [Dual Button Unit](./m5coreink_example_dualbutton/)   
 [ePaper Display](./m5coreink_example_epaper/)   
+[Inertial Measurement Unit (IMU)](./m5coreink_example_imu/)   
 [Real Time Clock (RTC)](./m5coreink_example_rtc/)   
 [Sensor (Analog Input)](./m5coreink_example_sensor/)  
 [Servo](./m5coreink_example_servo/)  
@@ -13,6 +14,7 @@ Examples and templates for **IXD-256**
 ### P5.js Examples
 
 [Sensor Visualization (WebSerial)](./p5js_example_sensor_webserial/)  
+[IMU Visualization (WebSerial)](./p5js_example_imu_webserial/)  
 
 ### Schematics
 

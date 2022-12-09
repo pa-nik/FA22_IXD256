@@ -13,7 +13,7 @@ You will also need to configure the WiFi network name and password with `SECRET_
 In this example, 3 separate `AdafruitIO_Feed` variables are created for subscribing and publishing data to Adafruit IO.  The first is the `sensorFeed` that publishes sensor readings obtained with `analogRead()` on M5Stack-CoreInk bottom connector pin `G33` (so this example can be used with M5Stack units like [Angle](https://docs.m5stack.com/en/unit/angle) or [Light](https://docs.m5stack.com/en/unit/light)).  
 
 The `sensorFeed` is configured to connect to the following feed on Adafruit IO (which has its "sharing" setting set to be public in order to be viewable by anyone):  
-[sensorfeed](https://io.adafruit.com/pa_nik/feeds/sensorfeed)
+[Feed: "sensorfeed"](https://io.adafruit.com/pa_nik/feeds/sensorfeed)
 
 **NOTE:** During wireless operation, some of the analog inputs on the ESP32 microprocessor are not available.  For example, the `G26` and `G25` pins on the M5Stack-CoreInk board will no work with the `analogRead()` function.  Instead, choose `G33` (4-pin bottom connector) or `G36` (top connector).  
 

@@ -15,9 +15,10 @@ Examples and templates for **IXD-256**
 
 ### P5.js Examples
 
-[Sensor Visualization (MQTT)](./p5js_example_mqtt/)  
-[Sensor Visualization (WebSerial)](./p5js_example_sensor_webserial/)  
+[Adafruit IO Example](./p5js_example_adafruitio/)  
 [IMU Visualization (WebSerial)](./p5js_example_imu_webserial/)  
+[Sensor Visualization (WebSerial)](./p5js_example_sensor_webserial/)  
+[Sensor Visualization (MQTT)](./p5js_example_mqtt/)  
 
 ### Schematics
 

@@ -3,6 +3,7 @@
 
 #include <WiFi.h>
 #include <AdafruitIO_WiFi.h>
+#include <Adafruit_NeoPixel.h>
 #include "M5CoreInk.h" 
 
 // initialize WiFi connection:
@@ -10,9 +11,16 @@ WiFiClient wifi;
 AdafruitIO_WiFi io(SECRET_AIO_USERNAME, SECRET_AIO_KEY, SECRET_SSID, SECRET_PASS);
 AdafruitIO_Feed *sensorFeed = io.feed("sensorfeed");
 AdafruitIO_Feed *ledFeed = io.feed("ledfeed");
+AdafruitIO_Feed *colorFeed = io.feed("colorfeed");
 
 const int ledPin = 10;          // built-in LED pin (G10)
 const int sensorPin = 33;       // bottom connector input pin (G33)
+const int rgbledPin = 32;   // bottom connector output pin (G32)
+
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(
+    3,                      // number of pixels 
+    rgbledPin,              // pin number
+    NEO_GRB + NEO_KHZ800);  // LED type
 
 unsigned long sensorTimer = 0;
 
@@ -28,7 +36,10 @@ void setup() {
   io.connect();
 
   // set up a message handler for the ledFeed:
-  ledFeed->onMessage(handleMessage);
+  ledFeed->onMessage(toggleMessage);
+
+  // set up a message handler for the colorFeed:
+  colorFeed->onMessage(colorMessage);
   
   // wait for a connection
   while(io.status() < AIO_CONNECTED) {
@@ -37,6 +48,7 @@ void setup() {
   }
   
   ledFeed->get();
+  colorFeed->get();
 
   // print connection status
   Serial.println(io.statusText());
@@ -65,9 +77,9 @@ void loop() {
   }
 }
 
-void handleMessage(AdafruitIO_Data *data) {
+void toggleMessage(AdafruitIO_Data *data) {
  
-  Serial.print("received: ");
+  Serial.print("toggleMessage received: ");
   Serial.println(data->value());
   
   if(strcmp((char*)data->value(), "ON")) {
@@ -76,4 +88,16 @@ void handleMessage(AdafruitIO_Data *data) {
   else {
     digitalWrite(ledPin, LOW);
   }
+}
+
+void colorMessage(AdafruitIO_Data *data) {
+ 
+  Serial.print("colorMessage received: ");
+  Serial.println(data->value());
+
+  long color = data->toNeoPixel();
+  for (int i = 0; i < 3; i++) {
+    pixels.setPixelColor(i, color);
+  }
+  pixels.show();
 }

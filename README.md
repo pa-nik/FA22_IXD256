@@ -4,7 +4,7 @@ Examples and templates for **IXD-256**
 
 ### M5Stack Core Ink Examples
 
-[Adafruit IO Subscribe and Publish to the cloud](./m5coreink_example_dualbutton/)   
+[Adafruit IO Subscribe and Publish to the cloud](./m5coreink_example_adafruitio/)   
 [Dual Button Unit](./m5coreink_example_dualbutton/)   
 [ePaper Display](./m5coreink_example_epaper/)   
 [Inertial Measurement Unit (IMU)](./m5coreink_example_imu/)  
